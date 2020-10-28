@@ -1,11 +1,11 @@
 import React from 'react';
-import './card.css';
+import './CardList'
 
-const Card = ({ name, email, id }) => {
+const Card = ({ name, email, id }) => { // it get from CardList 
   return (
-    <div className='tc grow bg-dark-blue br3 pa3 ma2 dib bw2 shadow-5 '>
-      <img alt='robots' src={`https://robohash.org/${id}?size=200x200`} />
-      <div className = "color">
+    <div className='tc grow bg-purple br3 pa3 ma2 dib bw2 shadow-1 '>{/* // this is just a style  */}
+      <img alt='robots' src={`https://robohash.org/${id}?set=set2size=200x200`} />  {/* img */}
+      <div>
         <h2>{name}</h2>
         <p>{email}</p>
       </div>
